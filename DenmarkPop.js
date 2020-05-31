@@ -1,5 +1,4 @@
 /* File: DenmarkPop.js 
-Draws the line chart
 By: Charishma Thota
 */
 
@@ -16,6 +15,9 @@ By: Charishma Thota
 //https://bost.ocks.org/mike/map/ -- borderes, displaying map logic
 //https://bl.ocks.org/JulienAssouline/1ae3480c5277e2eecd34b71515783d6f - for color schemes and csv combining with json knowledge
 //https://www.d3-graph-gallery.com/graph/custom_legend.html - for legend
+//Population Data acquired from https://www.statbank.dk/FOLK1A
+//SHP acquired from https://gadm.org/download_country_v3.html
+//Conversion from mapshaper.org
 
 //DEFINE WHERE WE WANT TO DISPLAY OUR DENMARK MAP
 var width = 960, 
@@ -103,4 +105,3 @@ svg.append("circle").attr("cy",200).attr("cx",240).attr("r", 6).style("fill", "r
 svg.append("text").attr("y", 180).attr("x", 100).text("Increasing Population ----->").style("font-size", "15px").attr("alignment-baseline","middle")
     
 });
-
